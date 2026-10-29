@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chess-study-planner-cli"
+version = "1.0.0"
+description = "Python CLI for planning chess opening and endgame study sessions, logging practice, and tracking progress"
+requires-python = ">=3.8"
+authors = [
+    { name = "Asdale Dynamics, LLC" },
+]
+
+[project.scripts]
+chess-study = "chess_study.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["chess_study*"]
